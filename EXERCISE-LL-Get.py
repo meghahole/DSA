@@ -51,7 +51,8 @@ class LinkedList:
             self.tail = new_node
         else:
             new_node.next = self.head
-            self.head = new_node
+            #self.head = new_node
+            new_node = self.head
         self.length += 1
         return True
 
@@ -81,7 +82,7 @@ my_linked_list.append(1)
 my_linked_list.append(2)
 my_linked_list.append(3)
 
-print(my_linked_list.get(3).value)
+my_linked_list.print_list()
 
 
 """
